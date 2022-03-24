@@ -15,14 +15,8 @@ var options = {
   }
 };
 
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
 
-
-export const getPlaceDetails = async() => {
+export const getPlacesData = async() => {
   try {
     const { data: { data }} = await axios.get('URL, options);');
   return data;
